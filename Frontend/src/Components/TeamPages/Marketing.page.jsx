@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AddContactForm from "./MarketingPageComponents/AddContactForm";
-import HeaderCard from "./MarketingPageComponents/AddContactForm";
-import ContactCard from "./MarketingPageComponents/AddContactForm";
+import HeaderCard from "./MarketingPageComponents/HeaderCard";
+import ContactCard from "./MarketingPageComponents/ContactCard";
 
 function MarketingPage() {
 	const [contacts, setContacts] = useState([]);
@@ -12,7 +12,7 @@ function MarketingPage() {
 	};
 
 	return (
-		<div className="min-h-screen bg-gray-100">
+		<div className="min-h-screen bg-white">
 			<HeaderCard />
 
 			<div className="container mx-auto px-4 py-8">
