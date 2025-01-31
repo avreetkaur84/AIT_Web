@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITS Management Website</title>
+    <link href="/dist/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button id="menu-button" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex shrink-0 items-center">
+                <img class="h-10 w-auto" src="/assessts/logos/aitslogowhite.png" alt="AITS">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">AITS Management</a>
+                  <a href="team.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                  <a href="info.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Info</a>
+                  <a href="contactus.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+                </div>
+                
+              </div>
+              
+            </div>
+
+
+
+            <div class="relative hidden md:block">
+              <input type="text" class="bg-gray-700 text-white rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" placeholder="Search...">
+              <button class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white">
+                <svg class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M16.5 10.5a6 6 0 1 0-12 0 6 6 0 0 0 12 0z"/>
+                </svg>
+              </button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">View notifications</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+              </button>
+    
+              
+
+
+
+
+
+
+
+
+              <!-- Profile dropdown -->
+              <!-- <div class="relative ml-3"> -->
+                <!-- <div>
+                  <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  </button>
+                </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--                 
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                <!-- <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 focus:outline-hidden" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1"> -->
+                  <!-- Active: "bg-gray-100 outline-hidden", Not Active: "" -->
+                  <!-- <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Team</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Info </a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Contact</a>
+                </div> -->
+              <!-- </div>
+            </div> -->
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">AITS Management</a>
+            <a href="team.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+            <a href="info.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Info</a>
+            <a href="contactus.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      
+
+
+
+      <style>
+        /* Custom Glow Effect */
+        .glow-text {
+          text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+      </style>
+    </head>
+    <body class="bg-black text-white">
+      
+      <!-- Hero Section -->
+
+<!-- Search Bar (Visible only on small screens) -->
+<div class="md:hidden relative w-full">
+  <!-- Added padding to prevent overlap with the navbar -->
+  <div class="flex flex-col items-center w-3/4 mx-auto mt-16 animate-fade-in">
+    <div class="relative w-full">
+      <input type="text" placeholder="Search..." 
+             class="w-full px-5 py-3 pl-12 rounded-full bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 shadow-lg transition-all duration-500 transform focus:scale-105 border border-gray-700 hover:border-blue-500">
+      <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 transition-all duration-300 hover:text-blue-400" 
+           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M21 21l-4.35-4.35M17 10A7 7 0 1 1 3 10a7 7 0 0 1 14 0z"/>
+      </svg>
+    </div>
+  </div>
+    <!-- AITS Logo (Visible only on small screens) -->
+  <!-- <div class="sm:hidden mt-4">
+    <img src="assessts/logos/aitslogowhite.png" alt="AITS Logo" class="w-40 h-auto mx-auto">
+  </div> -->
+</div>
+
+
+
+  <!-- AITS Logo (Visible only on small screens) -->
+  <!-- <div class="sm:hidden mt-4">
+    <img src="assessts/logos/aitslogowhite.png" alt="AITS Logo" class="w-40 h-auto mx-auto">
+  </div> -->
+      <div class="relative w-full  h-[65vh] lg:h-screen flex items-center justify-center text-center overflow-hidden">
+        
+
+
+
+
+
+
+        
+        <!-- Background Video -->
+        <video autoplay loop muted class="absolute w-full h-full object-cover opacity-30">
+          <source src="assessts/videos/bgvideo.mp4" type="video/mp4">
+        </video>
+        <!-- https://videos.pexels.com/video-files/3129957/3129957-uhd_2560_1440_25fps.mp4 -->
+        <!-- Content -->
+        <div class="relative">
+
+
+
+          <h1 id="title" class="text-4xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent glow-text" style="padding-bottom:25px">
+            All India Technology Summit 2025
+          </h1>
+              
+          <!-- <h3>Management Website</h3> -->
+          <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+            Empowering the Future of Technology, Innovation & Research  
+            <br/>
+            <span class="text-blue-400">Powered by IEEE Chandigarh University Student Branch</span>
+          </p>
+    
+          <!-- Call to Action -->
+          <a href="/team.html" 
+             class="mt-6 inline-block bg-gradient-to-r from-cyan-500 to-blue-700 px-6 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-cyan-500/50 transition-all transform hover:scale-105">
+            Click for Team Details
+          </a>
+
+
+        </div>
+      </div>
+    
+
+
+
+
+
+      <!-- Footer Section -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="container mx-auto px-6 md:px-12">
+      
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- About Section -->
+        <div>
+          <h2 class="text-xl font-semibold text-white">About AITS</h2>
+          <p class="mt-3 text-gray-400 text-sm">
+            The All India Technology Summit is a premier platform that unites tech enthusiasts, researchers, and industry leaders to innovate and inspire the next generation.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-xl font-semibold text-white">Quick Links</h2>
+          <ul class="mt-3 space-y-2">
+            <li><a href="#" class="hover:text-cyan-400 transition">Team</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Info</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Contact Us</a></li>
+            <li><a href="#" class="hover:text-cyan-400 transition">Feedback</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-xl font-semibold text-white">Contact Us</h2>
+          <p class="mt-3 text-gray-400 text-sm">IEEE Chandigarh University Student Branch</p>
+          <p class="text-gray-400 text-sm">Email: <a href="mailto:info@aits.com" class="hover:text-cyan-400">ieeeaits2025@gmail.com</a></p>
+          <p class="text-gray-400 text-sm">Phone: +91 98765 43210</p>
+  
+          <!-- Social Media Icons -->
+          <div class="mt-4 flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54V9.818c0-2.506 1.493-3.89 3.777-3.89 1.095 0 2.238.194 2.238.194v2.46h-1.26c-1.243 0-1.63.774-1.63 1.567v1.885h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 22 16.991 22 12z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184A4.738 4.738 0 0015.432 6a2.65 2.65 0 00-.039.543c0 3.758 2.856 8.102 8.093 8.102 1.553 0 2.999-.453 4.21-1.23a3.965 3.965 0 01-1.746.51c-1.522 0-2.804-1.31-2.804-2.925 0-.056 0-.111.002-.165a2.85 2.85 0 002.805-2.26 5.798 5.798 0 01-1.872.769 2.868 2.868 0 00-4.934-2.606 8.13 8.13 0 01-5.907-3 2.907 2.907 0 00.89 3.865 2.79 2.79 0 01-1.318-.37v.037c0 1.398.974 2.555 2.266 2.818a2.809 2.809 0 01-1.315.05c.371 1.218 1.455 2.109 2.727 2.133a5.753 5.753 0 01-4.174 1.22 8.135 8.135 0 004.39 1.326c5.275 0 8.162-4.362 8.162-8.15 0-.124 0-.247-.005-.37a5.874 5.874 0 001.457-1.512z"/>
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495V14.706h-3.13v-3.623h3.13V8.211c0-3.1 1.892-4.795 4.657-4.795 1.325 0 2.464.099 2.798.143v3.246l-1.92.001c-1.505 0-1.795.716-1.795 1.765v2.313h3.59l-.467 3.623h-3.123V24h6.127C23.406 24 24 23.407 24 22.675V1.325C24 .593 23.406 0 22.675 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+        © 2025 AITS | All Rights Reserved | Designed by IEEE CUSB
+      </div>
+  
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- JavaScript for Animations -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const title = document.getElementById("title");
+          title.style.opacity = "0";
+          title.style.transform = "translateY(-50px)";
+          
+          setTimeout(() => {
+            title.style.transition = "opacity 1.2s ease-out, transform 1.2s ease-out";
+            title.style.opacity = "1";
+            title.style.transform = "translateY(0)";
+          }, 500);
+        });
+      </script>
+
+      <script>
+        document.getElementById("menu-button").addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        const openIcon = document.querySelector(".open-icon");
+        const closedIcon = document.querySelector(".closed-icon");
+
+        // Toggle the menu visibility
+        menu.classList.toggle("hidden");
+
+        // Swap the icons
+        openIcon.classList.toggle("hidden");
+        closedIcon.classList.toggle("hidden");
+
+        // Toggle aria-expanded
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+        this.setAttribute("aria-expanded", !isExpanded);
+      });
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
