@@ -1,7 +1,15 @@
 import React, { useState } from "react";
-import AddContactForm from "./MarketingPageComponents/AddContactForm";
-import HeaderCard from "./MarketingPageComponents/HeaderCard";
-import ContactCard from "./MarketingPageComponents/ContactCard";
+import AddContactForm from "./TeamPageComponents/AddContactForm";
+import HeaderCard from "./TeamPageComponents/HeaderCard";
+import ContactCard from "./TeamPageComponents/ContactCard";
+
+const marketingTeamLead = {
+	name: 'Michael Davis',
+	phone: '+1 555 321 6549',
+	email: 'michael.davis@marketgenius.com',
+	profileImage: 'https://randomuser.me/api/portraits/men/3.jpg',
+	bio: 'Digital marketing strategist with expertise in SEO, social media campaigns, and lead generation. Proven track record of increasing brand visibility and engagement.',
+  };
 
 function MarketingPage() {
 	const [contacts, setContacts] = useState([]);
@@ -11,9 +19,16 @@ function MarketingPage() {
 		setContacts([...contacts, newContact]);
 	};
 
+
 	return (
 		<div className="min-h-screen bg-white">
-			<HeaderCard />
+			<HeaderCard
+				name={marketingTeamLead.name}
+				phone={marketingTeamLead.phone}
+				email={marketingTeamLead.email}
+				profileImage={marketingTeamLead.profileImage}
+				bio={marketingTeamLead.bio}
+			/>
 
 			<div className="container mx-auto px-4 py-8">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
